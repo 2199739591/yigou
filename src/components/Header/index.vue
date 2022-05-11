@@ -4,7 +4,7 @@
     <div class="top">
       <div class="container">
         <div class="loginList">
-          <p>尚品汇欢迎您！</p>
+          <p>易购网欢迎您！</p>
           <p v-if="!userName">
             <span>请</span>
             <router-link to="/login">登录</router-link>
@@ -18,10 +18,10 @@
         <div class="typeList">
           <router-link to="/center">我的订单</router-link>
           <router-link to="/shopcart">我的购物车</router-link>
-          <a href="###">我的尚品汇</a>
-          <a href="###">尚品汇会员</a>
+          <a href="###">我的易购网</a>
+          <a href="###">易购网会员</a>
           <a href="###">企业采购</a>
-          <a href="###">关注尚品汇</a>
+          <a href="###">关注易购网</a>
           <a href="###">合作招商</a>
           <a href="###">商家后台</a>
         </div>
@@ -31,7 +31,8 @@
     <div class="bottom">
       <h1 class="logoArea">
         <router-link class="logo" to="/home">
-          <img src="@/assets/images/logo.png" alt="">
+          <p id="title" style="{font-size:50px;margin-top:10px;margin-left:40px;}">易购网</p>
+          <!-- <img src="@/assets/images/logo.png" alt=""> -->
         </router-link>
       </h1>
       <div class="searchArea">
@@ -110,12 +111,14 @@ export default {
             line-height: 30px;
 
             .container {
+              
                 width: 1200px;
                 margin: 0 auto;
                 overflow: hidden;
 
                 .loginList {
                     float: left;
+                    
 
                     p {
                         float: left;
@@ -152,7 +155,15 @@ export default {
 
             .logoArea {
                 float: left;
-
+                height: 60px;
+                width: 200PX;
+                #title{
+                  font-size: 40px;
+                  // color: #eaeaea;
+                   background: linear-gradient(to right, red, blue);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                }
                 .logo {
                     img {
                         width: 175px;
