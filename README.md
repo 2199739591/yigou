@@ -1,17 +1,17 @@
 # 易购网网购平台
 
-
+运行步骤：
 ```
-npm install
-```
-
-
-```
-npm run serve
+1.npm install
 ```
 
 
 ```
-npm run build
+2.npm run serve
+```
+
+
+```
+production:npm run build
 ```
 
